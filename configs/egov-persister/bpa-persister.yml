@@ -1,4 +1,4 @@
-identationserviceMaps:
+serviceMaps:
   serviceName: bpa-services
   mappings:
     - version: 1
