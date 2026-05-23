@@ -1,4 +1,4 @@
-{
+﻿{
   "key": "svidentitycard",
   "DataConfigs": {
     "serviceName": "rainmaker-common",
@@ -95,7 +95,7 @@
                 }
               },
               {
-                "variable": "pg",
+                "variable": "cg",
                 "value": {
                   "path": "pgcitya"
                 }
