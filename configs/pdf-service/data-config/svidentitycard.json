@@ -1,4 +1,4 @@
-﻿{
+{
   "key": "svidentitycard",
   "DataConfigs": {
     "serviceName": "rainmaker-common",
@@ -207,7 +207,7 @@
             "externalAPI": [
               {
                 "path": "http://egov-mdms-service:8080/egov-mdms-service/v1/_get",
-                "queryParam": "moduleName=tenant&masterName=tenants&tenantId=pg&filter=%5B?(@.code=='{$.tenantId}')%5D",
+                "queryParam": "moduleName=tenant&masterName=tenants&tenantId=cg&filter=%5B?(@.code=='{$.tenantId}')%5D",
                 "apiRequest": null,
                 "responseMapping": [
                   {
@@ -244,7 +244,7 @@
               },
               {
                 "path": "http://egov-filestore:8080/filestore/v1/files/url",
-                "queryParam": "tenantId=pg&fileStoreIds=$.documentDetails[?(@.documentType==\"FAMILY.PHOTO.PHOTOGRAPH\" || @.documentType==\"FAMILY.PHOTO.PEHCHANPATRA\")].fileStoreId",
+                "queryParam": "tenantId=cg&fileStoreIds=$.documentDetails[?(@.documentType==\"FAMILY.PHOTO.PHOTOGRAPH\" || @.documentType==\"FAMILY.PHOTO.PEHCHANPATRA\")].fileStoreId",
                 "apiRequest": null,
                 "requesttype": "GET",
                 "responseMapping": [
@@ -257,7 +257,7 @@
               },
               {
                 "path": "http://egov-mdms-service:8080/egov-mdms-service/v1/_get",
-                "queryParam": "moduleName=tenant&masterName=footer&tenantId=pg&filter=%5B?(@.code=='{$.tenantId}' %26%26 @.service=='{$.paymentDetails[0].businessService}')%5D",
+                "queryParam": "moduleName=tenant&masterName=footer&tenantId=cg&filter=%5B?(@.code=='{$.tenantId}' %26%26 @.service=='{$.paymentDetails[0].businessService}')%5D",
                 "apiRequest": null,
                 "responseMapping": [
                   {

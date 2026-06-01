@@ -348,7 +348,7 @@
             "externalAPI": [
               {
                 "path": "http://egov-mdms-service:8080/egov-mdms-service/v1/_get",
-                "queryParam": "moduleName=tenant&masterName=tenants&tenantId=pg&filter=%5B?(@.code=='{$.tenantId}')%5D",
+                "queryParam": "moduleName=tenant&masterName=tenants&tenantId=cg&filter=%5B?(@.code=='{$.tenantId}')%5D",
                 "apiRequest": null,
                 "responseMapping": [
                   {
@@ -385,7 +385,7 @@
               },
               {
                 "path": "http://egov-mdms-service:8080/egov-mdms-service/v1/_get",
-                "queryParam": "moduleName=tenant&masterName=footer&tenantId=pg&filter=%5B?(@.code=='{$.tenantId}'%26%26 @.service=='{$.paymentDetails[0].businessService}')%5D",
+                "queryParam": "moduleName=tenant&masterName=footer&tenantId=cg&filter=%5B?(@.code=='{$.tenantId}'%26%26 @.service=='{$.paymentDetails[0].businessService}')%5D",
                 "apiRequest": null,
                 "responseMapping": [
                   {
@@ -412,7 +412,7 @@
               },
               {
                 "path": "http://cnd-service:8080/cnd-service/v1/_search",
-                "queryParam": "tenantId=pg.citya,applicationNumber=$.paymentDetails[0].bill.consumerCode,isUserDetailRequired=true",
+                "queryParam": "tenantId=cg.citya,applicationNumber=$.paymentDetails[0].bill.consumerCode,isUserDetailRequired=true",
 
                 "responseMapping": [
 
